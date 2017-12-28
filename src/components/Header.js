@@ -4,10 +4,10 @@ import {
 	View
 } from 'react-native'
 
-const Header = () => (
+const Header = ({ headerText }) => (
 	<View style={ styles.viewStyle }>
 		<Text style={ styles.textStyle }>
-			Albums!
+			{ headerText }
 		</Text>
 	</View>
 )
