@@ -1,10 +1,11 @@
 import React from 'react'
-import { 
-	Text,
-	View
+import {
+	ScrollView
 } from 'react-native'
 
 import axios from 'axios'
+
+import AlbumDetail from './AlbumDetail'
 
 export default class AlbumList extends React.Component {
 	state = {
@@ -20,13 +21,13 @@ export default class AlbumList extends React.Component {
 		const { albums } = this.state
 
 		return (
-			<View>
+			<ScrollView>
 				{ albums.map(album => (
-					<Text key={ album.title } >
-						{ album.title }
-					</Text>
+					<AlbumDetail
+						key={ album.title }
+						album={ album }/>
 				))}
-			</View>
+			</ScrollView>
 		)
 	}
 }

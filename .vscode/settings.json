@@ -1,0 +1,8 @@
+{
+	"javascript.validate.enable": false,
+	"editor.insertSpaces": false,
+	// Note: These two are what I find useful. if needed we can
+	// relegate them to the user settings.
+	"editor.renderWhitespace": "boundary",
+	"editor.tabSize": 4
+}
